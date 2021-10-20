@@ -9,7 +9,7 @@ import { UserDocument } from "../models/User";
  * List of API examples.
  * @route GET /api
  */
-export const getApi = (req: Request, res: Response) => {
+export const getApi = (res: Response<any, Record<string, unknown>>) => {
     res.render("api/index", {
         title: "API Examples"
     });
